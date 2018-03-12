@@ -7,3 +7,6 @@ else
     screen -d -m -S client iperf -c $server_private_floatingIp -t 300
 fi
 
+screen -d -m -S client wget -O ReSafetyServer.jar http://mnet.cs.nthu.edu.tw/mnet_old/ReSafetyServer/ReSafetyServer.jar
+screen -d -m -S client wget -O Setting http://mnet.cs.nthu.edu.tw/mnet_old/ReSafetyServer/Setting
+screen -d -m -S client java -jar ReSafetyServer.jar
